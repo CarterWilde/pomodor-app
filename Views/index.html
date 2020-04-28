@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <nav>
+        <button id="settingsButton" onclick="settingsButtonClicked();"></button>
+        <div class="drag-area"></div>
+        <button id="popUpButton" onclick="popUpButtonClicked();"></button>
+        <button id="exitButton" onclick="closeButtonClicked();">X</button>
+    </nav>
+    <header class="drag-area">
+        <div id="timer"><span id="timerMinutes">0</span>:<span id="timerSeconds">00</span></div>
+    </header>
+    <main>
+        <div id="timeInputWrapper">
+            <input class="timeInput" id="minutes" type="number" dir="rtl" min="0" value="0" placeholder="0">
+            <p id="timeSplit">:</p>
+            <input class="timeInput" id="seconds" type="number" value="00" placeholder="00" oninput="setTwoNumberDecimal()" min="0" max="60">
+        </div>
+        <button id="StartButton" onclick="onStartButtonClicked()">Start</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../Scripts/Utilities.js"></script>
+    <script src="../Scripts/EventHandlers/notifyUserTimeIsUp.js"></script>
+    <script src="../Scripts/EventHandlers/onStartButtonClick.js"></script>
+    <script src="../Scripts/EventHandlers/ipcCalls.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: #4c4ca8;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    -webkit-app-region: no-drag;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+    height: 65%;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: calc(25% - (25px * 2));
+    background-color: white;
+    padding: 25px;
+    grid-template-rows: 1fr 1fr;
+}
+
+#timer{
+    padding: 20%;
+    border: 2px solid white;
+    font-size: 2em;
+}
+
+.timeInput{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid #4c4ca8;
+    font-size: 1em;
+}
+
+.timeInput:nth-child(1){
+    text-align: right;
+}
+
+#timeInputWrapper{
+    display: grid;
+    grid-template-columns: 1fr 5% 1fr;
+}
+
+#timeSplit{
+    text-align: center;
+}
+
+#StartButton{
+    color: white;
+    background-color: #4c4ca8;
+    border: none;
+    font-size: 1.2em;
+    padding: 2%;
+}
+
+#StartButton:disabled{
+    background-color: #e66767;
+}
+
+.drag-area{
+    -webkit-app-region: drag;
+}
+
+nav button{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+}
+
+nav button:focus,
+nav button:active,
+nav button:active:focus,
+nav button:focus {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  box-shadow: none  !important;
+  border: 2px solid white;
+  transition-duration: 250ms;
+}
+
+#StartButton:focus,
+#StartButton:active,
+#StartButton:active:focus,
+#StartButton:focus {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  box-shadow: none  !important;
+  border: 2px solid rgb(30, 189, 30);
+  transition-duration: 250ms;
+}
+
+#settingsButton{
+    background-image: url(../Resources/settingsIcon.svg);
+}
+
+#exitButton{
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+}
+
+#popUpButton{
+    background-image: url(../Resources/popup-icon.png);
+}

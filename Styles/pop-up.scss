@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+html, body{
+    -webkit-app-region: drag;
+    height: calc(100% - 4px);
+    border: 2px solid white;
+    background-color: rgba(76, 76, 169, 0.60);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+}
+
+#timer{
+    padding: 20%;
+    font-size: 2em;
+}

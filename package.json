@@ -1,0 +1,22 @@
+{
+  "name": "pomodor-app",
+  "description": "description",
+  "authors": "Carter Wilde",
+  "version": "1.0.0",
+  "main": "./ApplicationController",
+  "scripts": {
+    "start": "npm run build && electron ./build/ApplicationController.js",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "electron": "^7.1.7",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "node-sass": "^4.14.0",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "declaration": true,
+        "outDir": "build/",
+        "inlineSourceMap": true,
+        "inlineSources": true
+    },
+    "files": [
+        "ApplicationController.ts"
+    ],
+    "include": [
+        "Scripts/**/*.ts", 
+        "Views/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
