@@ -9,7 +9,7 @@
     "build": "gulp build"
   },
   "dependencies": {
-    "electron": "^7.1.7",
+    "electron": "^9.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-typescript": "^6.0.0-alpha.1",
